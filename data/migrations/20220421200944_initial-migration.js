@@ -34,7 +34,7 @@ exports.up = async function(knex) {
             .notNullable()
             .references('step_id')
             .inTable('steps')
-        tbl.integer('step_id')
+        tbl.integer('ingredient_id')
             .unsigned()
             .notNullable()
             .references('ingredient_id')
